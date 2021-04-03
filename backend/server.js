@@ -23,6 +23,8 @@ connection.once('open', ()=>{
 const exercisesRouter = require('./routes/exercises')
 const usersRouter = require('./routes/users');
 
+
+app.use('/', express.static('./public')); //after build the frontend, do this. the express app will serve the react app
 //when url is exercises/users, it will use code on the files
 app.use('/exercises', exercisesRouter)
 app.use('/users', usersRouter)
