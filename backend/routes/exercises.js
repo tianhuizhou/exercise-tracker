@@ -10,6 +10,7 @@ router.route('/').get((req, res) => {
 });
 
 //add a new exercise
+//test hahah
 router.route('/add').post((req, res)=>{
     const username = req.body.username;
     const description = req.body.description;
